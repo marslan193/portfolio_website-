@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Arslan — Data Engineer & Backend Developer</title>
+<meta name="description" content="Portfolio of Muhammad Arslan — Data Engineer, Backend Developer, and Computer Engineering student.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ CUSTOM CURSOR GLOW (decorative) ============ -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">
+      <span class="logo-bracket">&lt;</span>arslan<span class="logo-bracket">/&gt;</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link"><span class="nav-num">01</span>about</a>
+      <a href="#experience" class="nav-link"><span class="nav-num">02</span>experience</a>
+      <a href="#projects" class="nav-link"><span class="nav-num">03</span>projects</a>
+      <a href="#skills" class="nav-link"><span class="nav-num">04</span>skills</a>
+      <a href="#education" class="nav-link"><span class="nav-num">05</span>education</a>
+      <a href="#contact" class="nav-link nav-link-cta"><span class="nav-num">06</span>contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO — TERMINAL QUERY STYLE ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-inner">
+
+      <div class="terminal-window hero-terminal" data-animate="fade-up">
+        <div class="terminal-bar">
+          <div class="terminal-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span class="terminal-title"></span>
+        </div>
+        <div class="terminal-body">
+          <p class="terminal-line">
+  
+            <span class="typed-query" id="typedQuery"></span>
+            <span class="cursor-blink" id="cursorBlink">|</span>
+          </p>
+          <div class="query-result" id="queryResult">
+            <p class="result-row"><span class="result-key">name</span><span class="result-sep">:</span> Muhammad Arslan</p>
+            <p class="result-row"><span class="result-key">role</span><span class="result-sep">:</span> Data Engineer · Backend Developer · Computer Engineer</p>
+            <p class="result-row"><span class="result-key">location</span><span class="result-sep">:</span> Karachi, Pakistan</p>
+            <p class="result-row"><span class="result-key">status</span><span class="result-sep">:</span> <span class="status-pill">available for opportunities</span></p>
+            <p class="result-meta"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-cta" data-animate="fade-up" data-delay="1">
+        <a href="#projects" class="btn btn-ghost">View Projects</a>
+        <a href="assets/Muhammad_Arslan_CV.pdf" download class="btn btn-ghost">Download CV ↓</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+
+      <div class="hero-scroll-hint" data-animate="fade-up" data-delay="2">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="section-inner">
+      <p class="section-eyebrow" data-animate="fade-up">// about</p>
+      <h2 class="section-title" data-animate="fade-up">Summary</h2>
+
+      <div class="about-grid">
+
+    <div class="about-photo-wrap" data-animate="fade-up">
+        <div class="about-photo-frame">
+            <img src="assets/Snapchat-1950622916.jpg"
+                 alt="Muhammad Arslan"
+                 id="mainProfile"
+                 class="about-photo">
+
+            <div class="photo-tag"></div>
+        </div>
+    </div>
+
+    <div class="about-text" data-animate="fade-up">
+        <p>
+            I am <strong>Muhammad Arslan</strong>, a Computer Engineering student at
+            <strong>Bahria University Karachi Campus</strong>, passionate about
+            Data Engineering, Artificial Intelligence, Machine Learning, and Backend Development.
+            I enjoy building innovative software solutions and applying technology to solve
+            real-world problems through data-driven decision making.
+        </p>
+
+        <p>
+            My career goal is to become a <strong>Data Engineer</strong> while continuously
+            expanding my expertise in Artificial Intelligence and Machine Learning. I am
+            committed to strengthening my knowledge in data pipelines, cloud technologies,
+            big data, and modern software engineering practices to develop scalable and
+            impactful applications.
+        </p>
+
+        <p>
+            I am a highly motivated learner who enjoys working on challenging projects,
+            collaborating with teams, and continuously improving my technical and
+            problem-solving abilities. I am always eager to explore emerging technologies
+            and contribute to innovative solutions that create real value.
+        </p>
+    </div>
+
+</div>
+
+        <div class="about-stats" data-animate="fade-up" data-delay="1">
+          <div class="stat-card">
+            <span class="stat-number">4</span>
+            <span class="stat-label">end-to-end projects shipped</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">90%+</span>
+            <span class="stat-label">NLP / plagiarism detection accuracy</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">60%</span>
+            <span class="stat-label">faster processing via automation</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">15</span>
+            <span class="stat-label">stored procedures built</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE — TIMELINE ============ -->
+  <section class="section experience" id="experience">
+    <div class="section-inner">
+      <p class="section-eyebrow" data-animate="fade-up">// work experience</p>
+      <h2 class="section-title" data-animate="fade-up">Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item" data-animate="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Freelance Software Developer</h3>
+              <span class="timeline-date">Jan 2023 — Present</span>
+            </div>
+            <p class="timeline-company">Self-Employed</p>
+            <ul class="timeline-list">
+              <li>Developed and delivered four full-stack software applications</li>
+              <li>Built AI/NLP systems, enterprise desktop applications, and Linux networking environments</li>
+              <li>Automated academic grading, billing, and inventory workflows</li>
+              <li>Reduced processing time by approximately <strong>60%</strong></li>
+              <li>Used Agile software development practices</li>
+              <li>Managed Git and GitHub repositories with branch-based workflows</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate="fade-up" data-delay="1">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Data Engineering Intern</h3>
+              <span class="timeline-date">Oct 2024 — Dec 2024</span>
+            </div>
+            <p class="timeline-company"></p>
+            <ul class="timeline-list">
+              <li>Designed ETL pipelines using Pandas and NumPy</li>
+              <li>Improved data quality by <strong>60%</strong></li>
+              <li>Developed normalized SQL Server databases</li>
+              <li>Created stored procedures, triggers, and views</li>
+              <li>Built NLP models using Scikit-learn and NLTK</li>
+              <li>Achieved over <strong>90%</strong> keyword detection accuracy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section projects" id="projects">
+    <div class="section-inner">
+      <p class="section-eyebrow" data-animate="fade-up">// featured projects</p>
+      <h2 class="section-title" data-animate="fade-up">Projects</h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card" data-animate="fade-up">
+          <div class="project-card-head">
+            <span class="project-tag">$ run assignment_checker.py</span>
+          </div>
+          <h3>AI-Based Assignment Quality Checker</h3>
+          <p class="project-desc">
+            An NLP-powered grading assistant that checks grammar, keyword relevance, readability,
+            structure, and plagiarism — with a live dashboard and downloadable reports.
+          </p>
+          <div class="project-stack">
+            <span>Python</span><span>NLP</span><span>Streamlit</span><span>NLTK</span>
+            <span>TextBlob</span><span>Pandas</span><span>TF-IDF</span><span>Scikit-learn</span>
+          </div>
+          <div class="project-output">
+            <p>&gt; grading_time: <span class="output-good">-70%</span></p>
+            <p>&gt; plagiarism_detection_accuracy: <span class="output-good">90%+</span></p>
+          </div>
+          <a href="/reports/ai based assigmnet Quality checker.pdf" download class="project-report-link">↓ Download Project Report (PDF)</a>
+        </article>
+
+        <article class="project-card" data-animate="fade-up" data-delay="1">
+          <div class="project-card-head">
+            <span class="project-tag">$ run pharmacy_system.jar</span>
+          </div>
+          <h3>Advanced Pharmacy Management System</h3>
+          <p class="project-desc">
+            A 10-module enterprise desktop application covering inventory, sales, purchasing,
+            billing, returns, audit logs, and role-based access control.
+          </p>
+          <div class="project-stack">
+            <span>Java</span><span>SQL Server</span><span>JDBC</span><span>Java Swing</span>
+            <span>Stored Procedures</span><span>Triggers</span>
+          </div>
+          <div class="project-output">
+            <p>&gt; modules_built: <span class="output-good">10</span></p>
+            <p>&gt; stored_procedures: <span class="output-good">15</span></p>
+            <p>&gt; redundant_queries: <span class="output-good">-40%</span></p>
+            <p>&gt; inventory_accuracy: <span class="output-good">100%</span></p>
+          </div>
+          <a href="/reports/" download class="project-report-link">↓ Download Project Report (PDF)</a>
+        </article>
+
+        <article class="project-card" data-animate="fade-up">
+          <div class="project-card-head">
+            <span class="project-tag">$ run airline_system.jar</span>
+          </div>
+          <h3>Airline Management System</h3>
+          <p class="project-desc">
+            A file-persisted OOP system handling flight scheduling, passenger booking,
+            seat allocation, and ticket generation.
+          </p>
+          <div class="project-stack">
+            <span>Java</span><span>OOP</span><span>File I/O</span>
+          </div>
+          <div class="project-output">
+            <p>&gt; data_loss: <span class="output-good">zero</span></p>
+          </div>
+          <a href="reports/02-132232-009-125841108353-14122024-024354pm.pdf" download class="project-report-link">↓ Download Project Report (PDF)</a>
+        </article>
+
+        <article class="project-card" data-animate="fade-up" data-delay="1">
+          <div class="project-card-head">
+            <span class="project-tag">$ ./deploy_vpn.sh</span>
+          </div>
+          <h3>Secure VPN Browser Environment</h3>
+          <p class="project-desc">
+            A hardened Linux networking environment with OpenVPN, firewall rules, and
+            DNS leak protection for fully encrypted browser traffic.
+          </p>
+          <div class="project-stack">
+            <span>Ubuntu Linux</span><span>OpenVPN</span><span>iptables</span>
+            <span>Shell Scripting</span><span>DNS</span><span>Network Security</span>
+          </div>
+          <div class="project-output">
+            <p>&gt; dns_leak_protection: <span class="output-good">enabled</span></p>
+            <p>&gt; encrypted_traffic: <span class="output-good">100%</span></p>
+          </div>
+          <a href="/reports/Vpn report.pdf" download class="project-report-link">↓ Download Project Report (PDF)</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS — SCHEMA STYLE ============ -->
+  <section class="section skills" id="skills">
+    <div class="section-inner">
+      <p class="section-eyebrow" data-animate="fade-up">// technical skills</p>
+      <h2 class="section-title" data-animate="fade-up">Skills Schema</h2>
+
+      <div class="schema-table" data-animate="fade-up">
+        <div class="schema-row schema-head">
+          <span>column</span><span>values</span>
+        </div>
+
+        <div class="schema-row">
+          <span class="schema-col">languages</span>
+          <span class="schema-vals">Python · Java · C++ · SQL · Embedded C · PHP · MATLAB</span>
+        </div>
+        <div class="schema-row">
+          <span class="schema-col">data_engineering</span>
+          <span class="schema-vals">MS SQL Server · SQLite · ETL Pipelines · Stored Procedures · Triggers · Views · SSMS · Pandas · NumPy</span>
+        </div>
+        <div class="schema-row">
+          <span class="schema-col">artificial_intelligence</span>
+          <span class="schema-vals">Scikit-learn · NLTK · TextBlob · TF-IDF · Cosine Similarity · Rule-Based AI · Text Mining · Embedded ML</span>
+        </div>
+        <div class="schema-row">
+          <span class="schema-col">backend_dev</span>
+          <span class="schema-vals">Laravel · REST APIs · JDBC · Java Swing · Streamlit</span>
+        </div>
+        <div class="schema-row">
+          <span class="schema-col">frontend</span>
+          <span class="schema-vals">HTML · CSS · JavaScript</span>
+        </div>
+        <div class="schema-row">
+          <span class="schema-col">dev_tools</span>
+          <span class="schema-vals">Git · GitHub · VS Code · Visual Studio · NetBeans · Android Studio · HubSpot CRM</span>
+        </div>
+        <div class="schema-row">
+          <span class="schema-col">operating_systems</span>
+          <span class="schema-vals">Ubuntu Linux · Windows</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION + CERTIFICATIONS ============ -->
+  <section class="section education" id="education">
+    <div class="section-inner">
+      <p class="section-eyebrow" data-animate="fade-up">// education & certifications</p>
+      <h2 class="section-title" data-animate="fade-up">Education</h2>
+
+      <div class="edu-grid">
+        <div class="edu-card" data-animate="fade-up">
+          <h3>Bachelor of Science in Computer Engineering</h3>
+          <p class="edu-school">Bahria University Karachi</p>
+          <p class="edu-date">2023 — Present</p>
+          <p class="edu-coursework-label">Relevant Coursework</p>
+          <div class="pill-row">
+            <span class="pill">Data Structures &amp; Algorithms</span>
+            <span class="pill">Database Systems</span>
+            <span class="pill">Operating Systems</span>
+            <span class="pill">Computer Networks</span>
+            <span class="pill">Software Engineering</span>
+            <span class="pill">OOP</span>
+            <span class="pill">Embedded Systems</span>
+            <span class="pill">Artificial Intelligence</span>
+          </div>
+        </div>
+
+        <div class="edu-card" data-animate="fade-up" data-delay="1">
+          <h3>Higher Secondary Certificate (Pre-Engineering)</h3>
+          <p class="edu-school">P.S.S.S.S Government Degree College, Karachi</p>
+          <p class="edu-date">2021 — 2023</p>
+        </div>
+      </div>
+
+      <div class="cert-list" data-animate="fade-up" data-delay="2">
+        <p class="cert-title">Certifications</p>
+        <ul>
+          <li><span>The Complete SQL Bootcamp</span><span class="cert-source">Udemy · 2024</span></li>
+          <li><span>SQL Basics for Beginners</span><span class="cert-source">Udemy · 2024</span></li>
+          <li><span>GitHub Foundations</span><span class="cert-source">Udemy · 2024</span></li>
+          <li><span>Introduction to Embedded Machine Learning</span><span class="cert-source">Udemy · 2024</span></li>
+          <li><span>Pre-Security Learning Path</span><span class="cert-source">TryHackMe · 2024</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="section-inner">
+      <p class="section-eyebrow" data-animate="fade-up">// get in touch</p>
+      <h2 class="section-title" data-animate="fade-up">Let's build something.</h2>
+      <p class="contact-sub" data-animate="fade-up" data-delay="1">
+        Open to data engineering, backend development, and AI/NLP opportunities.
+      </p>
+
+      <div class="contact-grid" data-animate="fade-up" data-delay="2">
+        <a href="mailto:arslanzero234@gmail.com" class="contact-card">
+          <span class="contact-icon">✉</span>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">arslanzero234@gmail.com</span>
+        </a>
+        <a href="tel:+923342881493" class="contact-card">
+          <span class="contact-icon">☎</span>
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+92 334-2881493</span>
+        </a>
+        <a href="https://www.linkedin.com/in/muhammad-arslan-79084a309" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <span class="contact-icon">in</span>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">/muhammadarslan</span>
+        </a>
+        <a href="https://github.com/marslan193" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <span class="contact-icon">&lt;/&gt;</span>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">/muhammadarslan</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>designed &amp; built by Muhammad Arslan · <span id="year"></span></p>
+</footer>
+</footer>
+
+<script>
+document.addEventListener('click', function(e) {
+  const t = e.target;
+  if (!t.classList) return;
+  if (t.classList.contains('thumb')) {
+    const main = document.getElementById('mainProfile');
+    if (main && t.dataset && t.dataset.src) {
+      main.src = t.dataset.src;
+    }
+    document.querySelectorAll('.photo-thumbs .thumb').forEach(el => el.classList.remove('active'));
+    t.classList.add('active');
+  }
+});
+</script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
